@@ -13,3 +13,5 @@
 * gather everything about the remote servers: ```ansible all -m gather_facts```
 * print only one server info: ```ansible all -m gather_facts --limit {ip}```
 
+* run ansible with sudo permission: ```ansible all -m apt -a update_cache=true --become --ask-become-pass```
+* install vim-nox to all hosts: ```ansible all -m apt -a name=vim-nox --become --ask-become-pass```
